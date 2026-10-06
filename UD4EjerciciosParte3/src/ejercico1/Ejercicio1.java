@@ -7,7 +7,7 @@ public class Ejercicio1 {
 		System.out.println("de la ud4 parte3");
 		Integer x=15;
 		System.out.println(x);
-
+		System.out.println(x*x);
 	}
 
 }
