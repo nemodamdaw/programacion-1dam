@@ -12,7 +12,7 @@ public class Ejercicio2 {
 		Integer totalSegundos = sc.nextInt();
 		Integer horas = totalSegundos/3600;
 		Integer minutos = (totalSegundos%3600)/60;
-		Integer segundos = totalSegundos%60;
+		Integer segundos = (totalSegundos%3600)%60;
 		System.out.println("Horas: "+horas);
 		System.out.println("Minutos: "+minutos);
 		System.out.println("Segundos: "+segundos);
