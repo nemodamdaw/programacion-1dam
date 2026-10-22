@@ -21,5 +21,6 @@ public class Ejercicio15 {
 		System.out.println("Resultado de (a + b) * c: "+resultado2);
 		sc.close();
 	}
+	//fin
 
 }
