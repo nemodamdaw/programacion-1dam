@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-    <name>SimulacroListas</name>
-    <comment>Ejercicios de listas, bucles y funciones auxiliares en Java</comment>
-    <projects/>
-    <buildSpec>
-        <buildCommand>
-            <name>org.eclipse.jdt.core.javabuilder</name>
-            <arguments/>
-        </buildCommand>
-    </buildSpec>
-    <natures>
-        <nature>org.eclipse.jdt.core.javanature</nature>
-    </natures>
+	<name>UD02-SimulacroListas</name>
+	<comment>Ejercicios de listas, bucles y funciones auxiliares en Java</comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
 </projectDescription>
