@@ -81,10 +81,7 @@ public class Ejercicios {
 
     // 7. Calcular la media mediante for-each.
     public static Double media1(List<Integer> numeros) {
-        if (numeros.isEmpty()) {
-            return 0.0;
-        }
-
+     
         Integer suma = 0;
         for (Integer numero : numeros) {
             suma += numero;
@@ -95,9 +92,6 @@ public class Ejercicios {
 
     // 8. Calcular la media mediante for clásico.
     public static Double media2(List<Integer> numeros) {
-        if (numeros.isEmpty()) {
-            return 0.0;
-        }
 
         Integer suma = 0;
         for (int i = 0; i < numeros.size(); i++) {
@@ -109,9 +103,6 @@ public class Ejercicios {
 
     // 9. Calcular la media mediante while.
     public static Double media3(List<Integer> numeros) {
-        if (numeros.isEmpty()) {
-            return 0.0;
-        }
 
         Integer suma = 0;
         int i = 0;
@@ -122,4 +113,6 @@ public class Ejercicios {
 
         return (double) suma / numeros.size();
     }
+    
+    //TODO Hacer aquí los ejercicios del examen
 }
