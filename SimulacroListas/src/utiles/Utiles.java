@@ -20,7 +20,7 @@ public class Utiles {
     public static boolean esPerfecto(Integer numero) {
     	Boolean res = false;
         Integer sumaDivisores = 0;
-        for (int divisor = 1; divisor <= numero / 2; divisor++) {
+        for (int divisor = 1; divisor < numero ; divisor++) {
             if (numero % divisor == 0) {
                 sumaDivisores += divisor;
             }
