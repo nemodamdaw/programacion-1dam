@@ -21,7 +21,15 @@ public class TestEjercicios {
 		System.out.println(Ejercicios.seleccionaPrimos(List.of(5,7,3,8,7)));
 		
 		System.out.println("Probando máximo--------");
-		System.out.println(Ejercicios.maximo(List.of(7,8,3,2)));
+		Integer x = Ejercicios.maximo(List.of(7,8,3,2));
+		System.out.println(x);
+		Integer y = Ejercicios.maximo(List.of());
+		if (y!=null) {
+			System.out.println("El máximo es : "+y);
+		}
+		else {
+			System.err.println("illoooo que jase con una lista vacía");
+		}
 	}
 
 }
