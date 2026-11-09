@@ -234,6 +234,25 @@ public class Ejercicios {
 //	public static Integer maximo(List<Integer> lis) {
 //		 return Collections.max(lis);
 //	}
+	
+	//Algoritmo de ordención de burbuja
+	public static List<Integer> ordena(List<Integer> lis){
+		Boolean ordenado = false;
+		while (!ordenado) {
+			ordenado=true;
+			for(int i=0;i<lis.size()-1;i++) {
+				Integer e = lis.get(i);
+				Integer sig = lis.get(i+1);
+				if (e>sig) {
+					Integer aux = lis.get(i);
+					lis.set(i, sig);
+					lis.set(i+1, aux);
+					ordenado=false;
+				}
+			}
+		}
+		return lis;
+	}
 }
 
 
