@@ -253,6 +253,19 @@ public class Ejercicios {
 		}
 		return lis;
 	}
+	
+	public static Long fibonacci(Integer n) {
+		Long res;
+		if(n==0) {
+			res=0L;
+		}else if (n==1) {
+			res=1L;
+		}else {
+			res=fibonacci(n-1) + fibonacci(n-2);
+		}
+		return res;
+	}
+	
 }
 
 

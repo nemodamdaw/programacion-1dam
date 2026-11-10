@@ -41,6 +41,10 @@ public class TestEjercicios {
 		System.out.println("Lista ordenada: "+Ejercicios.ordena(lista));
 		
 		System.out.println("Lista ordenada: "+Utiles.ordena(lista));
+		
+		for (int i = 0; i <=100; i++) {
+			System.out.println("Fibonacci("+i+") = "+Ejercicios.fibonacci(i));
+		}
 	}
 
 }
