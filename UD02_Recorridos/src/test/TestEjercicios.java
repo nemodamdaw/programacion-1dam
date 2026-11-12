@@ -42,9 +42,12 @@ public class TestEjercicios {
 		
 		System.out.println("Lista ordenada: "+Utiles.ordena(lista));
 		
-		for (int i = 0; i <=100; i++) {
-			System.out.println("Fibonacci("+i+") = "+Ejercicios.fibonacci(i));
-		}
+//		for (int i = 0; i <=100; i++) {
+//			System.out.println("Fibonacci("+i+") = "+Ejercicios.fibonacci(i));
+//		}
+		
+		System.out.println(Ejercicios.tienePrimo(List.of(8,8,3,5)));
+		System.out.println(Ejercicios.posicionPrimerPrimo(List.of(8,8,3,5)));
 	}
 
 }

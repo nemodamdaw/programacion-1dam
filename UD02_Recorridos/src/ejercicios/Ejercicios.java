@@ -133,7 +133,17 @@ public class Ejercicios {
 		}
 		return res;
 	}
-	
+	public static Integer posicionPrimerPrimo(List<Integer> lis) {
+		Integer res=-1;
+		for (int i=0; i<lis.size();i++) {
+			Integer e = lis.get(i);
+			if (Utiles.esPrimo(e)) {
+				res=i;
+				break;
+			}
+		}
+		return res;
+	}
 	//mezcla de suma y busca
 	//Método que dada una lista como parámetro me devuelva cierto si la suma de
 	//sus primos es primo
@@ -168,32 +178,36 @@ public class Ejercicios {
 	}
 	
 	//Dada una lista, comprobar si es creciente
+	//Ojo, si la lista tiene cero o un elemento
+	//se considera creciente
+	public static Boolean esCreciente(List<Integer> lis) {
+		Boolean res=true;
+		if (lis.size()>=2) {
+			for (int i = 1; i < lis.size(); i++) {
+				Integer e = lis.get(i);
+				Integer anterior = lis.get(i - 1);
+				if (e < anterior) {
+					res = false;
+					break;
+				}
+			} 
+		}
+		return res;
+	}
 //	public static Boolean esCreciente(List<Integer> lis) {
 //		Boolean res=true;
-//		for (int i = 1; i < lis.size(); i++) {
+//		int i = 1;
+//		while ( i < lis.size() ) {
 //			Integer e = lis.get(i);
 //			Integer anterior = lis.get(i-1);
 //			if (e<anterior) {
 //				res=false;
 //				break;
 //			}
+//			i++;
 //		}
 //		return res;
 //	}
-	public static Boolean esCreciente(List<Integer> lis) {
-		Boolean res=true;
-		int i = 1;
-		while ( i < lis.size() ) {
-			Integer e = lis.get(i);
-			Integer anterior = lis.get(i-1);
-			if (e<anterior) {
-				res=false;
-				break;
-			}
-			i++;
-		}
-		return res;
-	}
 	//Selección
 	//dada una lista hacer un método que me devuelva otra lista con los primos 
 	
@@ -256,11 +270,11 @@ public class Ejercicios {
 	
 	public static Long fibonacci(Integer n) {
 		Long res;
-		if(n==0) {
+		if(n==0) {//caso base
 			res=0L;
-		}else if (n==1) {
+		}else if (n==1) {//caso base
 			res=1L;
-		}else {
+		}else {//caso recursivo
 			res=fibonacci(n-1) + fibonacci(n-2);
 		}
 		return res;
