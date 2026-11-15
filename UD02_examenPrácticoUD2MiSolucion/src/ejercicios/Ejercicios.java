@@ -119,7 +119,7 @@ public class Ejercicios {
 	
 	public static Integer primeraVentanaObjetivo(List<Integer> ventas, Integer longitud, Integer objetivo) {
 		Integer res = -1;
-		for (int i = 0; i < ventas.size() - longitud; i++) {
+		for (int i = 0; i <= ventas.size() - longitud; i++) {
 			Integer suma = 0;
 			for (int j = i; j < i+longitud; j++) {
 				suma += ventas.get(j);
