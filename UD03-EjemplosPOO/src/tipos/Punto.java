@@ -10,9 +10,12 @@ public class Punto {
 		this.y = y;
 	}
 	//Constructor por defecto
+//	public Punto() {
+//		this.x = 0.0;
+//		this.y = 0.0;
+//	}
 	public Punto() {
-		this.x = 0.0;
-		this.y = 0.0;
+		this(0.0, 0.0);
 	}
 	public Double getX() {
 		return x;
@@ -29,7 +32,12 @@ public class Punto {
 	
 	@Override
 	public String toString() {
-		return "("+x+", "+y+")";
+		return "("+this.x+", "+y+")";
+	}
+	public Double distanciaA(Punto p) {
+		Double catx = getX()-p.getX();
+		Double caty = this.getY()-p.getY();
+		return Math.sqrt(catx*catx + caty*caty);
 	}
 }
 
