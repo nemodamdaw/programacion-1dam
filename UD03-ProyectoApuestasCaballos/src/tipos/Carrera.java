@@ -33,6 +33,7 @@ public class Carrera {
 		return "Carrera [fechaCarrera=" + fechaCarrera + ", caballos=" + caballos + "]";
 	}
 	
+	//metodo que devuelve el caballo mas veloz de la carrera
 	public Caballo caballoMasVeloz() {
 		Caballo res=null;
 		for (Caballo c : caballos) {
@@ -42,7 +43,19 @@ public class Carrera {
 		}
 		return res;
 	}
-	
+	//metodo que devuelve el caballo mas veloz de la carrera
+	//de una determinada raza pasada como parametro
+		public Caballo caballoMasVeloz(Raza r) {
+			Caballo res=null;
+			for (Caballo c : caballos) {
+				if (c.getRaza().equals(r)) {
+					if (res == null || c.getVelocidad() > res.getVelocidad()) {
+						res = c;
+					} 
+				}
+			}
+			return res;
+		}
 	
 	
 	

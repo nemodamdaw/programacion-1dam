@@ -18,6 +18,7 @@ public class UnDiaEnLasCarreras {
 		Carrera carrera = new Carrera(LocalDateTime.now(), lis);
 		
 		System.out.println(carrera.caballoMasVeloz());
+		System.out.println(carrera.caballoMasVeloz(Raza.ANDALUZ));
 
 	}
 
